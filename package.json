@@ -1,38 +1,32 @@
 {
-  "name": "react06",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://ridingtom.github.io/memory-game/",
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "A memory game application built with React.",
+  "main": "index.js",
   "dependencies": {
-    "formik": "^1.5.1",
-    "gh-pages": "^2.0.1",
+    "formik": "^2.1.5",
+    "gh-pages": "^3.1.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5",
-    "reactjs-localstorage": "0.0.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
+    "reactjs-localstorage": "^1.0.1",
     "shuffle-array": "^1.0.1",
-    "yup": "^0.26.10"
+    "yup": "^0.29.3"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/preset-env": "^7.3.4"
-  }
+  ]
 }
