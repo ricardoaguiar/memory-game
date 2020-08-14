@@ -167,13 +167,13 @@ class Game extends React.Component {
         </header>
         <div>{gameStatus}</div>
         <div className="Lvl-button">
-          <button onClick={() => this.lvlCreate(6)}>
+          <button onClick={() => { this.lvlCreate(6);this.props.setTime(3)}}>
             Easy
           </button>
-          <button onClick={() => this.lvlCreate(8)}>
+          <button onClick={() => {this.lvlCreate(8);this.props.setTime(6)}}>
             Medium
           </button>
-          <button onClick={() => this.lvlCreate(10)}>
+          <button onClick={() => {this.lvlCreate(10);this.props.setTime(8)}}>
             Hard
           </button>
         </div>
